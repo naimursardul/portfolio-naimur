@@ -7,7 +7,7 @@ export default function HeroSection() {
     <div className="flex max-md:flex-col-reverse items-center justify-center gap-[50px]  globPad bg-[--bg] opacity-80 shadow-[#3b2020] shadow-lg">
       <div className="flex flex-col items-start justify-center gap-4">
         <p className="flex gap-3 items-baseline">
-          <span className="text-[--text] font-[400] text-2xl">I'M</span>{" "}
+          <span className="text-[--text] font-[400] text-2xl">{"I'M"}</span>{" "}
           <span className="text-[--btn] font-[600] text-5xl">
             Naimur Rahman
           </span>
