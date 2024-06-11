@@ -3,4 +3,13 @@
 @tailwind utilities;
 
 :root {
+  --bg: #000000;
+  --bgSoft: #31333b;
+  --bgSofter: #3d3e42;
+  --btn: #3be12f;
+  --text: #ffffff;
+}
+
+.globPad {
+  @apply px-[100px] py-[50px];
 }
