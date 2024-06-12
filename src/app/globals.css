@@ -11,5 +11,5 @@
 }
 
 .globPad {
-  @apply px-[100px] py-[50px];
+  @apply px-[100px] py-[50px] max-md:px-[25px];
 }
