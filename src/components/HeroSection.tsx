@@ -54,8 +54,9 @@ export default function HeroSection() {
             <span>Contact me</span> <FaArrowRight />
           </button>
           <div className="flex gap-4 mt-2">
-            {socialIcons?.map((icon) => (
+            {socialIcons?.map((icon, i) => (
               <a
+                key={i}
                 href={`${icon?.link}`}
                 target="_blank"
                 className="text-3xl cursor-pointer hover:opacity-80"
