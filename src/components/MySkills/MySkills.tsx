@@ -1,4 +1,5 @@
 import { IoLogoJavascript } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiExpress, SiMongodb, SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -10,6 +11,10 @@ const skills: any = [
   {
     name: "JavaScript",
     icon: <IoLogoJavascript className="text-[yellow]" />,
+  },
+  {
+    name: "TypeScript",
+    icon: <SiTypescript className="text-[#3178C6]" />,
   },
   {
     name: "HTML",
