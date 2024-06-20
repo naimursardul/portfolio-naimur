@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import profileImg from "../../public/profile1.png";
+import profileImg from "../../../public/profile1.png";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import ContactForm from "./ContactForm";
+import ContactForm from "../ContactForm";
 import { MdCancel } from "react-icons/md";
 
 const socialIcons: { icon: any; link: string }[] = [

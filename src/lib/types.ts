@@ -3,4 +3,12 @@ interface LinkType {
   path: string;
 }
 
-export type { LinkType };
+interface SliderConfigType {
+  cardGap: number;
+  cardWidth: number;
+  smWindow?: number;
+  smCardWidth?: number;
+  cardNo: number;
+}
+
+export type { LinkType, SliderConfigType };
