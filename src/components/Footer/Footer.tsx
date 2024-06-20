@@ -40,6 +40,7 @@ export default function Footer() {
     <div className=" bg-[--bg] flex flex-col justify-between items-center opacity-80">
       <div className="globPad flex flex-col items-center gap-3">
         <h2 className=" text-[--btn]  font-bold">Contacts</h2>
+
         <div className="flex flex-wrap gap-6 text-[--text]">
           {socialIcons?.map((icon, i) => (
             <a

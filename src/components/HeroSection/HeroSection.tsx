@@ -3,8 +3,10 @@
 import Image from "next/image";
 import { useState } from "react";
 import profileImg from "../../../public/profile1.png";
-import { FaArrowDown, FaArrowRight, FaPhone } from "react-icons/fa6";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa6";
+import { TbMessage } from "react-icons/tb";
+import { BiLogoTelegram } from "react-icons/bi";
+import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import ContactForm from "../ContactForm";
@@ -29,6 +31,16 @@ const socialIcons: { icon: any; link: string }[] = [
     icon: <FaWhatsappSquare className="text-[#0CC143] " />,
     link: "+8801407348304",
   },
+  {
+    icon: <FaFacebook className="text-[#0664FC] " />,
+    link: "https://facebook.com/naimursardul",
+  },
+  {
+    icon: (
+      <BiLogoTelegram className="text-[white] bg-[#2EA2DC] p-[6px] rounded-full " />
+    ),
+    link: "https://facebook.com/naimursardul",
+  },
 ];
 
 export default function HeroSection() {
@@ -48,17 +60,18 @@ export default function HeroSection() {
             MERN Stack & NEXT.JS Developer
           </h1>
           <div className="flex gap-2">
-            <button
-              onClick={() => setPopUp(!popUp)}
-              className="flex gap-2 items-center justify-center border-none rounded font-[600] text-lg max-sm:text-sm text-[--bg] bg-[--btn] hover:opacity-75 px-3 py-2"
+            <a
+              href="/resume.pdf"
+              download={"Resume-Naimur.pdf"}
+              className="flex gap-1 items-center justify-center border-none rounded font-[600] text-lg max-sm:text-sm text-[--bg] bg-[--btn] hover:opacity-75 px-3 py-2"
             >
               <span>Download Resume</span> <FaArrowDown />
-            </button>
+            </a>
             <button
               onClick={() => setPopUp(!popUp)}
-              className="flex gap-2 items-center justify-center border-none rounded font-[600] text-lg max-sm:text-sm bg-[--text] hover:opacity-75 px-3 py-2"
+              className="flex gap-1 items-center justify-center border-none rounded font-[600] text-lg max-sm:text-sm bg-[--text] hover:opacity-75 px-3 py-2"
             >
-              <span>Contact me</span> <FaPhone />
+              <span>Contact me</span> <TbMessage className="text-xl" />
             </button>
           </div>
           <div className="flex gap-4 mt-2">

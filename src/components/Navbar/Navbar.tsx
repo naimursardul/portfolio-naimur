@@ -6,6 +6,7 @@ export default function Navbar() {
     { name: "About", path: "#about" },
     { name: "Skills", path: "#skills" },
     { name: "Reviews", path: "#reviews" },
+    { name: "Contact", path: "#contact" },
   ];
   return (
     <div className="h-full w-full bg-[#333333] flex items-center justify-center ">
