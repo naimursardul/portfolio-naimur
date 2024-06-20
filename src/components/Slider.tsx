@@ -61,7 +61,7 @@ export default function Slider({
   };
 
   return (
-    <div className="flex gap-4 justify-between ">
+    <div className="flex gap-3 max-sm:gap-2 justify-between ">
       <button
         disabled={offPrevBtn}
         onClick={() => handleSlider("prev")}

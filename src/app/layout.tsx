@@ -23,8 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={ubuntu.className}>
-        <Navbar />
-        <main>{children}</main>
+        <div className="">
+          <div className="w-full h-[100px] sticky top-0 z-20">
+            <Navbar />
+          </div>
+          <main className="">{children}</main>
+        </div>
       </body>
     </html>
   );

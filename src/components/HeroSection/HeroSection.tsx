@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import profileImg from "../../../public/profile1.png";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowDown, FaArrowRight, FaPhone } from "react-icons/fa6";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
@@ -47,12 +47,20 @@ export default function HeroSection() {
           <h1 className="text-[--text] font-[500] text-2xl">
             MERN Stack & NEXT.JS Developer
           </h1>
-          <button
-            onClick={() => setPopUp(!popUp)}
-            className="flex gap-2 items-center justify-center border-[4px] border-[--btn] rounded font-[600] text-xl text-[--btn] hover:text-[--bg] hover:bg-[--btn] px-3 py-2"
-          >
-            <span>Contact me</span> <FaArrowRight />
-          </button>
+          <div className="flex gap-2">
+            <button
+              onClick={() => setPopUp(!popUp)}
+              className="flex gap-2 items-center justify-center border-none rounded font-[600] text-lg max-sm:text-sm text-[--bg] bg-[--btn] hover:opacity-75 px-3 py-2"
+            >
+              <span>Download Resume</span> <FaArrowDown />
+            </button>
+            <button
+              onClick={() => setPopUp(!popUp)}
+              className="flex gap-2 items-center justify-center border-none rounded font-[600] text-lg max-sm:text-sm bg-[--text] hover:opacity-75 px-3 py-2"
+            >
+              <span>Contact me</span> <FaPhone />
+            </button>
+          </div>
           <div className="flex gap-4 mt-2">
             {socialIcons?.map((icon, i) => (
               <a

@@ -5,7 +5,7 @@ import Review from "./Review";
 export default function ExpSection() {
   const sliderConfig: SliderConfigType = {
     cardGap: 32,
-    cardWidth: 300,
+    cardWidth: 280,
     smWindow: 992,
     smCardWidth: 220,
     cardNo: 5,

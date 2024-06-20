@@ -69,7 +69,9 @@ export default function MySkills() {
             className="w-[200px] max-md:w-[120px] h-[200px] max-md:h-[120px] flex flex-col items-center justify-center gap-4 bg-[--bgSofter] rounded-lg"
           >
             <div className="text-5xl">{skill?.icon}</div>
-            <p className="text-xl text-[--text] font-[500] ">{skill?.name}</p>
+            <p className="text-md max-sm:text-sm text-[--text] font-[500] ">
+              {skill?.name}
+            </p>
           </div>
         ))}
       </div>
