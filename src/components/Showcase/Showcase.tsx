@@ -12,12 +12,9 @@ export default function Showcase() {
           Our Exceptional Portfolio
         </h2>
         <p className="text-[--text] text-center">
-          As the best web development company in Bangladesh, our skilled
-          designers and developers excel in diverse platforms, creating
-          solutions beyond traditional web design. From company and e-commerce
-          sites to buying house platforms, news portals, blogs, and more, we're
-          your trusted choice. Explore our exceptional portfolio for insights
-          into our diverse capabilities.
+          {
+            "As the best web development company in Bangladesh, our skilled designers and developers excel in diverse platforms, creating solutions beyond traditional web design. From company and e-commerce sites to buying house platforms, news portals, blogs, and more, we're your trusted choice. Explore our exceptional portfolio for insights into our diverse capabilities."
+          }
         </p>
       </div>
       <div className="flex flex-wrap gap-5 justify-center">
